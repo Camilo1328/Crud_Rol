@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/rol/save}" method="post" th:object="${rol}">
+    <input type="text" placeholder="rol" th:field="*{description}"><br>
+    <input type="submit" value="save">
+
+</form>
+</body>
+</html>
